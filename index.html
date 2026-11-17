@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria & Miraxh — 01 Maggio 2027</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+
+  <!-- Google Fonts: Fraunces & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              DEFAULT: '#445332',
+              dark: '#354127',
+              deep: '#29331e',
+              light: '#53653d',
+              soft: '#627749'
+            },
+            ivory: {
+              DEFAULT: '#F9F8F4',
+              warm: '#F4F1EA',
+              light: '#FFFFFF'
+            },
+            gold: {
+              DEFAULT: '#CBB48B',
+              light: '#DFCFB1',
+              dark: '#A98F63'
+            }
+          },
+          fontFamily: {
+            fraunces: ['"Fraunces"', 'serif'],
+            serif: ['"Fraunces"', 'serif'],
+            display: ['"Fraunces"', 'serif'],
+            moontime: ['"MoonTime"', 'cursive'],
+            script: ['"MoonTime"', 'cursive'],
+            sans: ['"Montserrat"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Local MoonTime font definition */
+    @font-face {
+      font-family: 'MoonTime';
+      src: url('fonts/MoonTime-Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    .font-moontime {
+      font-family: 'MoonTime', cursive !important;
+    }
+
+    /* Solid color without gradient */
+    .hero-bg {
+      background-color: #445332;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+  </style>
+</head>
+
+<body class="bg-[#F9F8F4] text-gray-800 font-sans antialiased selection:bg-gold selection:text-[#445332]">
+
+  <!-- ==============================================
+       NAVBAR / HEADER
+       ============================================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#445332]/95 backdrop-blur-md border-b border-white/10 text-ivory py-4 px-6">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="#hero" class="flex items-center space-x-2 text-white hover:text-gold transition">
+        <span class="font-serif tracking-widest text-lg font-medium">M</span>
+        <svg class="w-3.5 h-6 text-white inline" viewBox="0 0 24 34" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="12" cy="11.5" r="7.5" stroke="currentColor"/>
+          <circle cx="12" cy="22.5" r="7.5" stroke="currentColor"/>
+        </svg>
+        <span class="font-serif tracking-widest text-lg font-medium">M</span>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest font-medium">
+        <a href="#programma" class="hover:text-gold transition">Programma</a>
+        <a href="#alloggi" class="hover:text-gold transition">Alloggi</a>
+        <a href="#regali" class="hover:text-gold transition">Regalo</a>
+        <a href="#rsvp" class="hover:text-gold transition">Conferma Presenza</a>
+      </nav>
+
+      <a href="#rsvp" class="bg-gold text-[#445332] text-xs font-semibold uppercase tracking-widest px-5 py-2.5 hover:bg-gold-light transition shadow-sm border border-gold">
+        RSVP
+      </a>
+    </div>
+  </header>
+
+  <!-- ==============================================
+       HERO SECTION (Replicating the Invite Style)
+       ============================================== -->
+  <section id="hero" class="hero-bg min-h-screen flex flex-col justify-between text-white pt-28 sm:pt-32 pb-16 px-4 sm:px-8 relative overflow-hidden">
+    
+    <!-- Central Invitation Layout Matching The Exact Card -->
+    <div class="max-w-3xl w-full mx-auto my-auto py-6 sm:py-10">
+      <div class="grid grid-cols-12 gap-3 sm:gap-6 md:gap-8 items-center">
+        
+        <!-- Left Side: Monogram, Couple Names, Invitation, Ceremony Info -->
+        <div class="col-span-8 sm:col-span-8 md:col-span-8 flex flex-col justify-center text-left space-y-6 sm:space-y-8 pl-1 sm:pl-4 md:pl-8">
+          
+          <!-- Monogram: M ꝏ M -->
+          <div class="flex items-center space-x-2.5 sm:space-x-4 text-white">
+            <span class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal leading-none select-none">M</span>
+            <div class="inline-flex items-center justify-center">
+              <svg class="w-6 h-10 sm:w-8 sm:h-12 md:w-9 md:h-14 text-white stroke-current" viewBox="0 0 24 34" fill="none" stroke-width="1.8">
+                <circle cx="12" cy="11.5" r="7.5" stroke="currentColor"/>
+                <circle cx="12" cy="22.5" r="7.5" stroke="currentColor"/>
+              </svg>
+            </div>
+            <span class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal leading-none select-none">M</span>
+          </div>
+
+          <!-- Script Names (MoonTime font) -->
+          <div class="pt-1">
+            <h1 class="font-moontime text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white tracking-wide leading-tight">
+              Maria e Miraxh
+            </h1>
+          </div>
+
+          <!-- Invitation sentence -->
+          <div class="pt-2 sm:pt-4">
+            <p class="font-serif text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 font-light leading-snug">
+              Siamo felici di invitarvi<br>
+              al nostro matrimonio
+            </p>
+          </div>
+
+          <!-- Ceremony details -->
+          <div class="pt-4 sm:pt-6 space-y-1">
+            <p class="font-serif text-base sm:text-lg md:text-xl text-white/90 font-light">
+              Sabato &nbsp;|&nbsp; 11:15
+            </p>
+            <p class="font-serif text-base sm:text-lg md:text-xl text-white font-normal">
+              Chiesa di San Francesco
+            </p>
+            <p class="font-sans text-xs sm:text-sm text-white/70 font-light tracking-wider">
+              Tolentino MC
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Top Line, 01, MAG, 27, Bottom Line -->
+        <div class="col-span-4 sm:col-span-4 md:col-span-4 flex flex-col items-center justify-center text-center">
+          
+          <!-- Top vertical line -->
+          <div class="w-[2px] h-16 sm:h-24 md:h-32 bg-white/80"></div>
+          
+          <!-- Date Display -->
+          <div class="py-2 sm:py-3 flex flex-col items-center select-none">
+            <span class="font-serif text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white font-light leading-none tracking-tight">01</span>
+            <span class="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white font-semibold tracking-widest uppercase my-1.5 sm:my-2 leading-none">MAG</span>
+            <span class="font-serif text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white font-light leading-none tracking-tight">27</span>
+          </div>
+
+          <!-- Bottom vertical line -->
+          <div class="w-[2px] h-20 sm:h-28 md:h-40 bg-white/80"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Controls: Live Countdown & Action Buttons -->
+    <div class="w-full max-w-xl mx-auto pt-8 border-t border-white/15 text-center relative z-10">
+      
+      <!-- Live Countdown -->
+      <p class="text-[10px] sm:text-xs uppercase tracking-widest text-gold-light/90 mb-3 font-medium">Conto alla Rovescia</p>
+      <div id="countdown" class="grid grid-cols-4 gap-2 text-center mb-6">
+        <div class="bg-black/20 border border-white/15 p-2.5 sm:p-3">
+          <span id="days" class="block font-serif text-2xl sm:text-3xl text-gold font-light">--</span>
+          <span class="text-[10px] uppercase tracking-wider text-white/70">Giorni</span>
+        </div>
+        <div class="bg-black/20 border border-white/15 p-2.5 sm:p-3">
+          <span id="hours" class="block font-serif text-2xl sm:text-3xl text-gold font-light">--</span>
+          <span class="text-[10px] uppercase tracking-wider text-white/70">Ore</span>
+        </div>
+        <div class="bg-black/20 border border-white/15 p-2.5 sm:p-3">
+          <span id="minutes" class="block font-serif text-2xl sm:text-3xl text-gold font-light">--</span>
+          <span class="text-[10px] uppercase tracking-wider text-white/70">Minuti</span>
+        </div>
+        <div class="bg-black/20 border border-white/15 p-2.5 sm:p-3">
+          <span id="seconds" class="block font-serif text-2xl sm:text-3xl text-gold font-light">--</span>
+          <span class="text-[10px] uppercase tracking-wider text-white/70">Secondi</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-4">
+        <a href="#programma" class="bg-gold hover:bg-gold-light text-[#445332] font-semibold text-xs uppercase tracking-widest px-7 py-3.5 transition duration-200 shadow-sm border border-gold">
+          Scopri il Programma
+        </a>
+        <button onclick="addToCalendar()" class="bg-white/10 hover:bg-white/20 text-white border border-white/25 font-medium text-xs uppercase tracking-widest px-7 py-3.5 transition duration-200 flex items-center space-x-2">
+          <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          <span>Salva la Data</span>
+        </button>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#programma" class="inline-block mt-2 text-white/50 hover:text-gold transition">
+        <svg class="w-5 h-5 animate-bounce mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+        </svg>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ==============================================
+       SEZIONE 1: PROGRAMMA DELLA GIORNATA
+       ============================================== -->
+  <section id="programma" class="py-24 px-4 bg-[#F9F8F4] border-b border-[#445332]/10">
+    <div class="max-w-4xl mx-auto">
+      
+      <!-- Section Header with MoonTime accent -->
+      <div class="text-center mb-20">
+        <span class="font-moontime text-4xl sm:text-5xl text-[#445332] block -mb-2">momenti speciali</span>
+        <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl text-[#445332] font-normal tracking-tight">Programma della Giornata</h2>
+        <div class="w-16 h-0.5 bg-[#445332]/30 mx-auto mt-4"></div>
+        <p class="text-gray-600 mt-4 text-sm sm:text-base font-light max-w-lg mx-auto">
+          Tutti i momenti salienti della nostra giornata da vivere e festeggiare insieme.
+        </p>
+      </div>
+
+      <!-- Timeline Container: Echoes the vertical line from the invite -->
+      <div class="relative border-l-2 border-[#445332]/30 ml-6 md:ml-36 space-y-12 sm:space-y-14">
+        
+        <!-- Step 1: Cerimonia -->
+        <div class="relative pl-8 md:pl-10 group">
+          <!-- Timeline marker -->
+          <div class="absolute -left-[9px] top-2.5 w-4 h-4 bg-[#445332] border-2 border-[#F9F8F4] shadow-sm"></div>
+
+          <!-- Time badge in Fraunces -->
+          <div class="md:absolute md:-left-36 md:top-0 md:text-right mb-2 md:mb-0">
+            <span class="font-serif text-3xl sm:text-4xl text-[#445332] font-normal tracking-tight">11:15</span>
+          </div>
+
+          <!-- Card Content (Clean architectural frame matching the invite) -->
+          <div class="bg-white p-7 sm:p-8 border border-[#445332]/15 shadow-sm hover:border-[#445332] transition">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
+              <h3 class="font-serif text-2xl sm:text-3xl text-[#445332] font-normal">Celebrazione Matrimonio</h3>
+              <span class="text-[10px] tracking-[0.15em] uppercase border border-[#445332]/30 text-[#445332] px-3 py-1 font-medium">Cerimonia Religiosa</span>
+            </div>
+            <p class="text-gray-700 font-light leading-relaxed mb-5 text-sm sm:text-base">
+              La celebrazione avrà luogo presso la <strong>Chiesa di San Francesco</strong> a Tolentino (MC).
+            </p>
+            <a href="https://maps.google.com/?q=Chiesa+di+San+Francesco+Tolentino" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs uppercase tracking-widest font-semibold text-[#445332] hover:text-gold-dark transition space-x-2">
+              <span>Apri su Google Maps</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Step 2: Spostamento -->
+        <div class="relative pl-8 md:pl-10 group">
+          <div class="absolute -left-[9px] top-2.5 w-4 h-4 bg-[#445332] border-2 border-[#F9F8F4] shadow-sm"></div>
+
+          <div class="md:absolute md:-left-36 md:top-0 md:text-right mb-2 md:mb-0">
+            <span class="font-serif text-3xl sm:text-4xl text-[#445332] font-normal tracking-tight">13:00</span>
+          </div>
+
+          <div class="bg-white p-7 sm:p-8 border border-[#445332]/15 shadow-sm hover:border-[#445332] transition">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
+              <h3 class="font-serif text-2xl sm:text-3xl text-[#445332] font-normal">Fine Celebrazione & Spostamento</h3>
+              <span class="text-[10px] tracking-[0.15em] uppercase bg-amber-50 text-amber-900 border border-amber-200 px-3 py-1 font-medium">~25 min di auto</span>
+            </div>
+            <p class="text-gray-700 font-light leading-relaxed mb-5 text-sm sm:text-base">
+              Uscita dalla Chiesa e spostamento verso il <strong>Casolare dei segreti</strong> per dare inizio ai festeggiamenti.
+            </p>
+            <a href="https://maps.google.com/?q=Casolare+dei+segreti" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs uppercase tracking-widest font-semibold text-[#445332] hover:text-gold-dark transition space-x-2">
+              <span>Indicazioni per il Casolare dei segreti</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Step 3: Ricevimento & Buffet -->
+        <div class="relative pl-8 md:pl-10 group">
+          <div class="absolute -left-[9px] top-2.5 w-4 h-4 bg-[#445332] border-2 border-[#F9F8F4] shadow-sm"></div>
+
+          <div class="md:absolute md:-left-36 md:top-0 md:text-right mb-2 md:mb-0">
+            <span class="font-serif text-3xl sm:text-4xl text-[#445332] font-normal tracking-tight">13:30</span>
+          </div>
+
+          <div class="bg-white p-7 sm:p-8 border border-[#445332]/15 shadow-sm hover:border-[#445332] transition">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
+              <h3 class="font-serif text-2xl sm:text-3xl text-[#445332] font-normal">Buffet & Ricevimento</h3>
+              <span class="text-[10px] tracking-[0.15em] uppercase border border-[#445332]/30 text-[#445332] px-3 py-1 font-medium">Ricevimento</span>
+            </div>
+            <p class="text-gray-700 font-light leading-relaxed text-sm sm:text-base">
+              Inizio del buffet e aperitivo di benvenuto al ricevimento, mentre noi saremo con il fotografo per gli scatti di rito. A seguire, pranzo insieme e grandi festeggiamenti!
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       SEZIONE 2: ALLOGGI & OSPITALITÀ
+       ============================================== -->
+  <section id="alloggi" class="py-24 px-4 bg-white border-b border-[#445332]/10">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Section Header with MoonTime accent -->
+      <div class="text-center mb-14">
+        <span class="font-moontime text-4xl sm:text-5xl text-[#445332] block -mb-2">ospitalità & accoglienza</span>
+        <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl text-[#445332] font-normal tracking-tight">Dove Alloggiare</h2>
+        <div class="w-16 h-0.5 bg-[#445332]/30 mx-auto mt-4"></div>
+        <p class="text-gray-600 mt-5 text-sm sm:text-base font-light max-w-2xl mx-auto italic font-serif">
+          "Per chi viene da fuori, sentitevi liberi: questi sono solo alcuni suggerimenti e strutture consigliate nella zona della cerimonia e del ricevimento."
+        </p>
+
+        <!-- Category Filters (Crisp Minimalist Tabs) -->
+        <div class="flex items-center justify-center flex-wrap gap-3 mt-10">
+          <button onclick="filterAccommodations('all')" id="btn-all" class="filter-btn active bg-[#445332] text-white text-xs uppercase tracking-widest font-medium px-6 py-2.5 transition border border-[#445332]">
+            Tutti gli alloggi (9)
+          </button>
+          <button onclick="filterAccommodations('chiesa')" id="btn-chiesa" class="filter-btn bg-transparent hover:bg-[#445332]/5 text-[#445332] text-xs uppercase tracking-widest font-medium px-6 py-2.5 transition border border-[#445332]/30">
+            Vicino alla Chiesa
+          </button>
+          <button onclick="filterAccommodations('ricevimento')" id="btn-ricevimento" class="filter-btn bg-transparent hover:bg-[#445332]/5 text-[#445332] text-xs uppercase tracking-widest font-medium px-6 py-2.5 transition border border-[#445332]/30">
+            Vicino al Ricevimento
+          </button>
+        </div>
+      </div>
+
+      <!-- Accommodations Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="accommodations-grid">
+
+        <!-- 1. Casa Polly - DH Villas -->
+        <div class="hotel-card bg-[#F9F8F4] border border-[#445332]/15 p-6 sm:p-7 flex flex-col justify-between hover:border-[#445332] hover:shadow-md transition group" data-category="ricevimento">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-[#445332] border border-[#445332]/25 px-2.5 py-0.5">
+                4-star hotel
+              </span>
+              <span class="text-[10px] font-medium uppercase tracking-wider text-amber-900 bg-amber-50 border border-amber-200 px-2.5 py-0.5">
+                Ricevimento
+              </span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#445332] font-medium mb-2 group-hover:text-gold-dark transition">
+              Casa Polly - DH Villas
+            </h3>
+            <p class="text-xs text-gray-600 font-light mb-4 leading-relaxed">
+              Elegante sistemazione con piscina immersa nelle colline marchigiane.
+            </p>
+          </div>
+          <a href="https://dhvillas.com/property/175-casa-polly-6/" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-[#445332] text-white hover:bg-[#354127] text-xs uppercase tracking-widest font-semibold py-3 px-4 transition flex items-center justify-center space-x-2">
+            <span>Visita il sito</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+
+        <!-- 2. Agriturismo Pascucci -->
+        <div class="hotel-card bg-[#F9F8F4] border border-[#445332]/15 p-6 sm:p-7 flex flex-col justify-between hover:border-[#445332] hover:shadow-md transition group" data-category="chiesa">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-[#445332] border border-[#445332]/25 px-2.5 py-0.5">
+                4-star hotel
+              </span>
+              <span class="text-[10px] font-medium uppercase tracking-wider text-emerald-900 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5">
+                Chiesa
+              </span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#445332] font-medium mb-2 group-hover:text-gold-dark transition">
+              Agriturismo Pascucci
+            </h3>
+            <p class="text-xs text-gray-600 font-light mb-4 leading-relaxed">
+              Tipico casolare in pietra, comfort e quiete a pochi minuti dal centro storico.
+            </p>
+          </div>
+          <a href="https://www.agriturismopascucci.it/en/home/" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-[#445332] text-white hover:bg-[#354127] text-xs uppercase tracking-widest font-semibold py-3 px-4 transition flex items-center justify-center space-x-2">
+            <span>Visita il sito</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+
+        <!-- 3. Oltremodo B&B - Piccola Dimora -->
+        <div class="hotel-card bg-[#F9F8F4] border border-[#445332]/15 p-6 sm:p-7 flex flex-col justify-between hover:border-[#445332] hover:shadow-md transition group" data-category="chiesa">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-[#445332] border border-[#445332]/25 px-2.5 py-0.5">
+                Bed & breakfast
+              </span>
+              <span class="text-[10px] font-medium uppercase tracking-wider text-emerald-900 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5">
+                Chiesa
+              </span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#445332] font-medium mb-2 group-hover:text-gold-dark transition">
+              Oltremodo B&B
+            </h3>
+            <p class="text-xs text-gray-600 font-light mb-4 leading-relaxed">
+              Piccola Dimora accogliente e moderna, comodissima per raggiungere la chiesa.
+            </p>
+          </div>
+          <a href="https://www.stayoltremodo.it/" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-[#445332] text-white hover:bg-[#354127] text-xs uppercase tracking-widest font-semibold py-3 px-4 transition flex items-center justify-center space-x-2">
+            <span>Visita il sito</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+
+        <!-- 4. Angelina Urban Lodge -->
+        <div class="hotel-card bg-[#F9F8F4] border border-[#445332]/15 p-6 sm:p-7 flex flex-col justify-between hover:border-[#445332] hover:shadow-md transition group" data-category="chiesa">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-[#445332] border border-[#445332]/25 px-2.5 py-0.5">
+                3-star hotel
+              </span>
+              <span class="text-[10px] font-medium uppercase tracking-wider text-emerald-900 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5">
+                Chiesa
+              </span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#445332] font-medium mb-2 group-hover:text-gold-dark transition">
+              Angelina Urban Lodge
+            </h3>
+            <p class="text-xs text-gray-600 font-light mb-4 leading-relaxed">
+              Lodge urbano curato nei dettagli, situato vicino ai punti di interesse di Tolentino.
+            </p>
+          </div>
+          <a href="https://www.angelina.it/urbanlodge/en/" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-[#445332] text-white hover:bg-[#354127] text-xs uppercase tracking-widest font-semibold py-3 px-4 transition flex items-center justify-center space-x-2">
+            <span>Visita il sito</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+
+        <!-- 5. Il Roccolo Di Valcerasa -->
+        <div class="hotel-card bg-[#F9F8F4] border border-[#445332]/15 p-6 sm:p-7 flex flex-col justify-between hover:border-[#445332] hover:shadow-md transition group" data-category="ricevimento">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-[#445332] border border-[#445332]/25 px-2.5 py-0.5">
+                4-star hotel
+              </span>
+              <span class="text-[10px] font-medium uppercase tracking-wider text-amber-900 bg-amber-50 border border-amber-200 px-2.5 py-0.5">
+                Ricevimento
+              </span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#445332] font-medium mb-2 group-hover:text-gold-dark transition">
+              Il Roccolo Di Valcerasa
+            </h3>
+            <p class="text-xs text-gray-600 font-light mb-4 leading-relaxed">
+              Country house affascinante e rilassante, a brevissima distanza dal Casolare dei segreti.
+            </p>
+          </div>
+          <a href="https://www.countryhouseilroccolo.it/" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-[#445332] text-white hover:bg-[#354127] text-xs uppercase tracking-widest font-semibold py-3 px-4 transition flex items-center justify-center space-x-2">
+            <span>Visita il sito</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+
+        <!-- 6. B&B ARDEA -->
+        <div class="hotel-card bg-[#F9F8F4] border border-[#445332]/15 p-6 sm:p-7 flex flex-col justify-between hover:border-[#445332] hover:shadow-md transition group" data-category="chiesa">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-[#445332] border border-[#445332]/25 px-2.5 py-0.5">
+                Bed & breakfast
+              </span>
+              <span class="text-[10px] font-medium uppercase tracking-wider text-emerald-900 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5">
+                Chiesa
+              </span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#445332] font-medium mb-2 group-hover:text-gold-dark transition">
+              B&B ARDEA
+            </h3>
+            <p class="text-xs text-gray-600 font-light mb-4 leading-relaxed">
+              Ambiente familiare, pulito e comodo a pochi passi dal centro di Tolentino.
+            </p>
+          </div>
+          <a href="https://maps.app.goo.gl/vxFQ6WvY64TZwNjP8" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-[#445332] text-white hover:bg-[#354127] text-xs uppercase tracking-widest font-semibold py-3 px-4 transition flex items-center justify-center space-x-2">
+            <span>Vedi su Google Maps</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+
+        <!-- 7. Il Villino -->
+        <div class="hotel-card bg-[#F9F8F4] border border-[#445332]/15 p-6 sm:p-7 flex flex-col justify-between hover:border-[#445332] hover:shadow-md transition group" data-category="ricevimento">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-[#445332] border border-[#445332]/25 px-2.5 py-0.5">
+                Country house
+              </span>
+              <span class="text-[10px] font-medium uppercase tracking-wider text-amber-900 bg-amber-50 border border-amber-200 px-2.5 py-0.5">
+                Ricevimento
+              </span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#445332] font-medium mb-2 group-hover:text-gold-dark transition">
+              Il Villino
+            </h3>
+            <p class="text-xs text-gray-600 font-light mb-4 leading-relaxed">
+              Ristorante e Country house con vista panoramica sulle colline circostanti.
+            </p>
+          </div>
+          <a href="https://www.ilvillinoristorante.it/" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-[#445332] text-white hover:bg-[#354127] text-xs uppercase tracking-widest font-semibold py-3 px-4 transition flex items-center justify-center space-x-2">
+            <span>Visita il sito</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+
+        <!-- 8. OH! Outdoor Hostel San Lorenzo -->
+        <div class="hotel-card bg-[#F9F8F4] border border-[#445332]/15 p-6 sm:p-7 flex flex-col justify-between hover:border-[#445332] hover:shadow-md transition group" data-category="ricevimento">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-[#445332] border border-[#445332]/25 px-2.5 py-0.5">
+                Hostel
+              </span>
+              <span class="text-[10px] font-medium uppercase tracking-wider text-amber-900 bg-amber-50 border border-amber-200 px-2.5 py-0.5">
+                Ricevimento
+              </span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#445332] font-medium mb-2 group-hover:text-gold-dark transition">
+              OH! Hostel San Lorenzo
+            </h3>
+            <p class="text-xs text-gray-600 font-light mb-4 leading-relaxed">
+              Soluzione giovane, immersa nel verde e ideale per gruppi di amici.
+            </p>
+          </div>
+          <a href="https://ohsanlorenzo.it/" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-[#445332] text-white hover:bg-[#354127] text-xs uppercase tracking-widest font-semibold py-3 px-4 transition flex items-center justify-center space-x-2">
+            <span>Visita il sito</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+
+        <!-- 9. Interno Marche -->
+        <div class="hotel-card bg-[#F9F8F4] border border-[#445332]/15 p-6 sm:p-7 flex flex-col justify-between hover:border-[#445332] hover:shadow-md transition group" data-category="chiesa">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-[#445332] border border-[#445332]/25 px-2.5 py-0.5">
+                4-star Hotel
+              </span>
+              <span class="text-[10px] font-medium uppercase tracking-wider text-emerald-900 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5">
+                Chiesa
+              </span>
+            </div>
+            <h3 class="font-serif text-2xl text-[#445332] font-medium mb-2 group-hover:text-gold-dark transition">
+              Interno Marche
+            </h3>
+            <p class="text-xs text-gray-600 font-light mb-4 leading-relaxed">
+              Design hotel a 4 stelle unico nel suo genere, situato nel cuore di Tolentino.
+            </p>
+          </div>
+          <a href="https://internomarche.it/" target="_blank" rel="noopener noreferrer" class="mt-4 w-full text-center bg-[#445332] text-white hover:bg-[#354127] text-xs uppercase tracking-widest font-semibold py-3 px-4 transition flex items-center justify-center space-x-2">
+            <span>Visita il sito</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       SEZIONE 3: LISTA NOZZE & REGALO
+       ============================================== -->
+  <section id="regali" class="py-24 px-4 bg-[#445332] text-white relative">
+    
+    <div class="max-w-4xl mx-auto relative z-10">
+      
+      <!-- Section Header with MoonTime accent -->
+      <div class="text-center mb-16">
+        <span class="font-moontime text-4xl sm:text-5xl text-gold-light block -mb-2">con il cuore</span>
+        <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-normal tracking-tight">Lista Nozze & Regali</h2>
+        <div class="w-16 h-0.5 bg-gold/50 mx-auto mt-4"></div>
+
+        <!-- Heartfelt note from couple -->
+        <div class="mt-10 max-w-2xl mx-auto glass-card p-7 sm:p-9 border border-white/20 text-center">
+          <p class="font-serif italic text-xl sm:text-2xl text-white leading-relaxed mb-4">
+            "Il regalo migliore che potete farci è senza dubbio condividere con noi questa giornata speciale."
+          </p>
+          <p class="text-sm sm:text-base text-white/85 font-light leading-relaxed">
+            Tuttavia, se avete il desiderio di donarci qualcosa, condividiamo con voi che quest’anno inizieremo la nostra vita insieme nella bella città di <strong>Torino</strong>. Le spese saranno tante e qualsiasi aiuto sarà accolto con immensa gratitudine! ❤️
+          </p>
+        </div>
+      </div>
+
+      <!-- Gift Options Cards (Clean, Geometric, Architectural) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- Option 1: IBAN & Torino New Life -->
+        <div class="glass-card p-7 sm:p-8 flex flex-col justify-between border border-white/20 relative">
+          <div class="absolute -top-3 left-6 bg-gold text-[#445332] text-[10px] font-bold uppercase tracking-widest px-3 py-1">
+            Inizio Vita a Torino
+          </div>
+
+          <div>
+            <div class="flex items-center space-x-3 mb-5 mt-2">
+              <div class="w-10 h-10 border border-gold/40 flex items-center justify-center text-gold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-serif text-2xl sm:text-3xl text-white font-normal">Conto Condiviso</h3>
+                <p class="font-moontime text-xl text-gold-light">bonifico bancario</p>
+              </div>
+            </div>
+
+            <div class="space-y-4 my-6 bg-black/25 p-4 border border-white/10">
+              <div>
+                <span class="text-[10px] uppercase tracking-wider text-white/60 block">Intestatario</span>
+                <span class="text-sm font-medium text-white">Maria Vitali, Miraxh Tereziu</span>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase tracking-wider text-white/60 block">IBAN</span>
+                <span id="iban-text" class="font-mono text-sm tracking-wider text-gold font-medium break-all">
+                  IT00000000000000000000
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button onclick="copyIBAN()" id="copy-btn" class="w-full bg-gold hover:bg-gold-light text-[#445332] font-semibold text-xs uppercase tracking-widest py-3.5 px-4 transition flex items-center justify-center space-x-2 shadow-sm border border-gold">
+              <svg id="copy-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/>
+              </svg>
+              <span id="copy-text">Copia IBAN</span>
+            </button>
+            <p id="copy-feedback" class="text-center text-xs text-gold-light mt-2 opacity-0 transition-opacity">
+              IBAN copiato negli appunti!
+            </p>
+          </div>
+        </div>
+
+        <!-- Option 2: Luna di Miele (Vietnam) -->
+        <div class="glass-card p-7 sm:p-8 flex flex-col justify-between border border-white/20 relative">
+          <div class="absolute -top-3 left-6 bg-gold text-[#445332] text-[10px] font-bold uppercase tracking-widest px-3 py-1">
+            Viaggio di Nozze 🇻🇳
+          </div>
+
+          <div>
+            <div class="flex items-center space-x-3 mb-5 mt-2">
+              <div class="w-10 h-10 border border-gold/40 flex items-center justify-center text-gold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-serif text-2xl sm:text-3xl text-white font-normal">Il Vietnam ci aspetta!</h3>
+                <p class="font-moontime text-xl text-gold-light">luna di miele</p>
+              </div>
+            </div>
+
+            <p class="text-sm text-white/85 font-light leading-relaxed my-4">
+              Se siete appassionati di viaggi come noi e vorreste contribuire alla nostra magica luna di miele in Vietnam, potete rivolgervi direttamente in agenzia:
+            </p>
+
+            <div class="space-y-3 bg-black/25 p-4 border border-white/10 my-4 text-xs font-light text-white/90">
+              <p><strong class="font-semibold text-white">Referente:</strong> Ester</p>
+              <p><strong class="font-semibold text-white">Agenzia:</strong> NOME AGENZIA</p>
+              <p><strong class="font-semibold text-white">Indirizzo:</strong> VIA / INDIRIZZO</p>
+              <p><strong class="font-semibold text-white">Telefono / Contatto:</strong> NUMERO DI TELEFONO</p>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <a href="https://wa.me/?text=Ciao%20Ester,%20vorrei%20informazioni%20per%20contribuire%20alla%20luna%20di%20miele%20in%20Vietnam%20di%20Maria%20e%20Miraxh!" target="_blank" class="w-full bg-white/10 hover:bg-white/20 text-white border border-white/25 font-medium text-xs uppercase tracking-widest py-3.5 px-4 transition flex items-center justify-center space-x-2">
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.127-.514-1.832-.751-2.996-2.617-3.087-2.738-.091-.121-.734-.977-.734-1.862 0-.885.466-1.32.632-1.498.167-.179.365-.224.486-.224.122 0 .243.002.35.007.113.005.263-.043.412.316.155.374.528 1.289.574 1.381.046.091.077.198.016.319-.061.121-.092.197-.183.303-.091.106-.192.237-.274.319-.092.091-.188.19-.081.373.107.183.476.786 1.021 1.272.702.625 1.294.819 1.477.91.182.091.289.076.395-.046.107-.121.457-.532.579-.714.121-.182.243-.152.41-.091.167.061 1.06.5 1.243.591.182.091.304.137.35.213.045.076.045.439-.099.844z"/></svg>
+              <span>Contatta Agenzia Viaggi</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       SEZIONE 4: RSVP (GOOGLE FORM EMBED)
+       ============================================== -->
+  <section id="rsvp" class="py-24 px-4 bg-[#F9F8F4]">
+    <div class="max-w-3xl mx-auto">
+      
+      <!-- Section Header with MoonTime accent -->
+      <div class="text-center mb-12">
+        <span class="font-moontime text-4xl sm:text-5xl text-[#445332] block -mb-2">vi aspettiamo</span>
+        <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl text-[#445332] font-normal tracking-tight">Conferma la tua Presenza</h2>
+        <div class="w-16 h-0.5 bg-[#445332]/30 mx-auto mt-4"></div>
+        <p class="text-gray-600 mt-4 text-sm sm:text-base font-light max-w-xl mx-auto">
+          Ti chiediamo la cortesia di compilare il modulo qui sotto per farci sapere se sarai dei nostri e permetterci di organizzare al meglio ogni dettaglio.
+        </p>
+      </div>
+
+      <!-- Google Form Embed Container (Fitted tightly, no massive blank space) -->
+      <div class="bg-white border border-[#445332]/20 shadow-sm p-1 sm:p-4 max-w-2xl mx-auto overflow-hidden">
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd_bzaWPSW-2knmuhTqAe7Ia1KX2y0-RtSS_VIvRjTwkVgPdg/viewform?embedded=true" 
+          width="100%" 
+          height="1000" 
+          frameborder="0" 
+          marginheight="0" 
+          marginwidth="0"
+          class="w-full max-w-[640px] border-0 mx-auto block h-[980px] md:h-[1020px]">
+          Caricamento…
+        </iframe>
+      </div>
+
+      <!-- Quick Fallback link if browser blocks iframe -->
+      <div class="text-center mt-6">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_bzaWPSW-2knmuhTqAe7Ia1KX2y0-RtSS_VIvRjTwkVgPdg/viewform" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs uppercase tracking-widest text-[#445332]/70 hover:text-[#445332] transition space-x-1.5 font-medium">
+          <span>Non riesci a visualizzare il modulo? Clicca qui per aprirlo a schermo intero</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       FOOTER
+       ============================================== -->
+  <footer class="bg-[#445332] text-white py-20 px-4 border-t border-white/10 text-center relative">
+    <div class="max-w-4xl mx-auto space-y-6">
+      
+      <!-- Monogram with matching vertical interlocking rings -->
+      <div class="flex items-center justify-center space-x-2 text-white opacity-90">
+        <span class="font-serif text-2xl font-light">M</span>
+        <svg class="w-4 h-7 text-white inline" viewBox="0 0 24 34" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="12" cy="11.5" r="7.5" stroke="currentColor"/>
+          <circle cx="12" cy="22.5" r="7.5" stroke="currentColor"/>
+        </svg>
+        <span class="font-serif text-2xl font-light">M</span>
+      </div>
+
+      <p class="font-moontime text-5xl md:text-6xl text-gold-light">
+        Maria e Miraxh
+      </p>
+
+      <p class="font-serif text-sm tracking-widest uppercase text-white/80">
+        01 Maggio 2027 · Tolentino (MC)
+      </p>
+
+      <div class="w-16 h-px bg-gold/40 mx-auto"></div>
+
+      <p class="text-xs text-white/60 font-light tracking-wider">
+        Non vediamo l'ora di festeggiare con voi!
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==============================================
+       JAVASCRIPT LOGIC
+       ============================================== -->
+  <script>
+    // 1. COUNTDOWN TIMER (Target: May 1, 2027 at 11:15 AM CEST)
+    const weddingDate = new Date('2027-05-01T11:15:00+02:00').getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const difference = weddingDate - now;
+
+      if (difference <= 0) {
+        document.getElementById('countdown').innerHTML = "<div class='col-span-4 text-center font-serif text-2xl text-gold'>Oggi è il gran giorno! 🎉</div>";
+        return;
+      }
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      document.getElementById('days').innerText = days;
+      document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+      document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+      document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // 2. COPY IBAN TO CLIPBOARD
+    function copyIBAN() {
+      const ibanText = document.getElementById('iban-text').innerText.trim();
+      navigator.clipboard.writeText(ibanText).then(() => {
+        const feedback = document.getElementById('copy-feedback');
+        const copyText = document.getElementById('copy-text');
+        
+        copyText.innerText = "Copiato!";
+        feedback.classList.remove('opacity-0');
+        
+        setTimeout(() => {
+          copyText.innerText = "Copia IBAN";
+          feedback.classList.add('opacity-0');
+        }, 2500);
+      }).catch(err => {
+        alert("IBAN: " + ibanText);
+      });
+    }
+
+    // 3. FILTER ACCOMMODATIONS
+    function filterAccommodations(category) {
+      const cards = document.querySelectorAll('.hotel-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      // Update active button state
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-[#445332]', 'text-white', 'border-[#445332]');
+        btn.classList.add('bg-transparent', 'text-[#445332]', 'border-[#445332]/30');
+      });
+
+      const activeBtn = document.getElementById('btn-' + category);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-transparent', 'text-[#445332]', 'border-[#445332]/30');
+        activeBtn.classList.add('bg-[#445332]', 'text-white', 'border-[#445332]');
+      }
+
+      // Filter cards
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // 4. ADD TO CALENDAR (.ICS FILE GENERATION)
+    function addToCalendar() {
+      const icsContent = 
+`BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Maria e Miraxh//Matrimonio//IT
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+SUMMARY:Matrimonio Maria & Miraxh 💍
+DESCRIPTION:Celebrazione matrimonio alla Chiesa di San Francesco (Tolentino MC) ore 11:15, a seguire ricevimento al Casolare dei segreti.
+LOCATION:Chiesa di San Francesco, Tolentino MC
+DTSTART:20270501T091500Z
+DTEND:20270501T220000Z
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR`;
+
+      const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+      const link = document.createElement('a');
+      link.href = window.URL.createObjectURL(blob);
+      link.setAttribute('download', 'Matrimonio_Maria_e_Miraxh.ics');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>
